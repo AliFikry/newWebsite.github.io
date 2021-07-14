@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .navbar-toggler {
+  border-radius: 180px;
+  background-color: #212529;
+}
+
+.navbar button:hover {
+  background-color: rgba(119, 119, 119, 0.24);
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search input {
+  width: 200px;
+  height: 40px;
+}
+
+.search button {
+  background-color: #212529;
+}
+
+.search :hover {
+  background-color: rgba(119, 119, 119, 0.24);
+}
+
+.search .credentials button {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #212529;
+}
+
+.search .credentials :hover {
+  background-color: rgba(119, 119, 119, 0.24);
+}
+
+@media only screen and (max-width: 700px) {
+  .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .search input {
+    width: 100px;
+    height: 40px;
+  }
+  .sign-btn {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
