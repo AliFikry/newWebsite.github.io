@@ -3,6 +3,7 @@
     
 }
 .navbar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     .navbar-toggler{
         border-radius: 180px;
         background-color: #212529;
@@ -10,6 +11,12 @@
     button:hover{
         background-color: rgba(119, 119, 119, 0.24);
     }
+    xl{
+        margin-top: 5px;
+    }
+}
+.first{
+    display: none;
 }
 .search{
     display: flex;
@@ -21,22 +28,57 @@
         background-color: #212529;
     
     }
-    :hover{
+    .sign {
+        svg{
+            margin-top: 5px;
+            color: white;
+        }
+    }
+    .sign:hover{
         background-color: rgba(119, 119, 119, 0.24);
     }
     .credentials{
+        display: flex;
         button{
             color: white;
             font-size: 18px;
             font-weight: bold;
             background-color: #212529;
         }
-        :hover{
+        button:hover{
             background-color: rgba(119, 119, 119, 0.24);
+        }
+        .searchbar{
+            margin-top: 5px;
         }
     }
 }
-@media only screen and (max-width: 700px) {
+
+main{
+    .mainSearch{
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #20bf55;
+        background-image :linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+
+        .content{
+            padding: 100px;
+            h1{
+                color: white;
+            }
+            p{
+                color: white;
+                font-size: 30px;
+                word-spacing: 2px;
+                letter-spacing: 1px;
+            }
+            input{
+
+            }
+        }
+        
+    }
+}
+@media only screen and (max-width: 600px) {
     .search{
         display: flex;
         input{
@@ -44,7 +86,26 @@
             height: 40px;
         }
     }
+    .second{
+        display: none ;
+    }
+    .first{
+        display: block;
+    }
     .sign-btn{
       display: none !important;
     }
-  }
+    .mainSearch{
+        height: 200px;
+    }
+    .content{
+        padding: 50px !important;
+
+        h1{
+            font-size: 23px;
+        }
+        p{
+            font-size: 15px !important;
+        }
+    }
+}

@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.navbar {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .navbar .navbar-toggler {
   border-radius: 180px;
   background-color: #212529;
@@ -10,6 +15,14 @@
 
 .navbar button:hover {
   background-color: rgba(119, 119, 119, 0.24);
+}
+
+.navbar xl {
+  margin-top: 5px;
+}
+
+.first {
+  display: none;
 }
 
 .search {
@@ -27,8 +40,19 @@
   background-color: #212529;
 }
 
-.search :hover {
+.search .sign svg {
+  margin-top: 5px;
+  color: white;
+}
+
+.search .sign:hover {
   background-color: rgba(119, 119, 119, 0.24);
+}
+
+.search .credentials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .search .credentials button {
@@ -38,11 +62,37 @@
   background-color: #212529;
 }
 
-.search .credentials :hover {
+.search .credentials button:hover {
   background-color: rgba(119, 119, 119, 0.24);
 }
 
-@media only screen and (max-width: 700px) {
+.search .credentials .searchbar {
+  margin-top: 5px;
+}
+
+main .mainSearch {
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+}
+
+main .mainSearch .content {
+  padding: 100px;
+}
+
+main .mainSearch .content h1 {
+  color: white;
+}
+
+main .mainSearch .content p {
+  color: white;
+  font-size: 30px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 600px) {
   .search {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -52,8 +102,26 @@
     width: 100px;
     height: 40px;
   }
+  .second {
+    display: none;
+  }
+  .first {
+    display: block;
+  }
   .sign-btn {
     display: none !important;
+  }
+  .mainSearch {
+    height: 200px;
+  }
+  .content {
+    padding: 50px !important;
+  }
+  .content h1 {
+    font-size: 23px;
+  }
+  .content p {
+    font-size: 15px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
