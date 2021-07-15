@@ -51,6 +51,18 @@
         .searchbar{
             margin-top: 5px;
         }
+        .modal{
+            .modal-content{
+                input{
+                   padding: 10px;
+                   
+                }
+                input:focus,input:active{
+                    box-shadow:none !important;
+                    outline:none !important;
+                }
+            }
+        }
     }
 }
 
@@ -59,9 +71,10 @@ main{
         box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: #20bf55;
         background-image :linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+        height: 300px;
 
         .content{
-            padding: 100px;
+            padding: 60px;
             h1{
                 color: white;
             }
@@ -72,7 +85,18 @@ main{
                 letter-spacing: 1px;
             }
             input{
-
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width: 100%;
+                
+            }
+            .main-searchBar{
+                display: flex;
+                button{
+                    background-color: hsl(152, 69%, 31%);
+                }
+                *:hover{
+                    background-color: hsl(152, 69%, 21%);
+                }
             }
         }
         
@@ -96,7 +120,7 @@ main{
       display: none !important;
     }
     .mainSearch{
-        height: 200px;
+        height: 250px !important;
     }
     .content{
         padding: 50px !important;
@@ -107,5 +131,6 @@ main{
         p{
             font-size: 15px !important;
         }
+        
     }
 }
