@@ -89,12 +89,13 @@ main{
                 width: 100%;
                 
             }
+            
             .main-searchBar{
                 display: flex;
                 button{
                     background-color: hsl(152, 69%, 31%);
                 }
-                *:hover{
+                button:hover{
                     background-color: hsl(152, 69%, 21%);
                 }
             }
@@ -103,6 +104,19 @@ main{
     .side-title{
         div{
             margin: 10px 0px ;
+        }
+    }
+    .trend-section{
+        padding: 15px 0px;
+        .trend-title{
+            font-size: 23px;
+            font-weight: 500;
+        }
+    }
+    .trend-body{
+        display: flex;
+        .card{
+            margin: 5px 10px;
         }
     }
 }

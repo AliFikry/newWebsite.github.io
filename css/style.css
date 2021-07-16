@@ -119,12 +119,31 @@ main .mainSearch .content .main-searchBar button {
   background-color: #198653;
 }
 
-main .mainSearch .content .main-searchBar *:hover {
+main .mainSearch .content .main-searchBar button:hover {
   background-color: #115a38;
 }
 
 main .side-title div {
   margin: 10px 0px;
+}
+
+main .trend-section {
+  padding: 15px 0px;
+}
+
+main .trend-section .trend-title {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+main .trend-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .trend-body .card {
+  margin: 5px 10px;
 }
 
 #side-title-div {
