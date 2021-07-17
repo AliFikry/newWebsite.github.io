@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar .navbar-toggler {
+  border-radius: 180px;
+  background-color: #212529;
+}
+
+.navbar button:hover {
+  background-color: rgba(119, 119, 119, 0.24);
+}
+
+.navbar xl {
+  margin-top: 5px;
+}
+
+.first {
+  display: none;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search input {
+  width: 200px;
+  height: 40px;
+}
+
+.search button {
+  background-color: #212529;
+}
+
+.search .sign svg {
+  margin-top: 5px;
+  color: white;
+}
+
+.search .sign:hover {
+  background-color: rgba(119, 119, 119, 0.24);
+}
+
+.search .credentials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search .credentials button {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #212529;
+}
+
+.search .credentials button:hover {
+  background-color: rgba(119, 119, 119, 0.24);
+}
+
+.search .credentials .searchbar {
+  margin-top: 5px;
+}
+
+.search .credentials .modal .modal-content input {
+  padding: 10px;
+}
+
+.search .credentials .modal .modal-content input:focus, .search .credentials .modal .modal-content input:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+}
+
+main .mainSearch {
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  height: 300px;
+}
+
+main .mainSearch .content {
+  padding: 60px;
+}
+
+main .mainSearch .content h1 {
+  color: white;
+}
+
+main .mainSearch .content p {
+  color: white;
+  font-size: 30px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+main .mainSearch .content input {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+}
+
+main .mainSearch .content .main-searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .mainSearch .content .main-searchBar button {
+  background-color: #198653;
+}
+
+main .mainSearch .content .main-searchBar button:hover {
+  background-color: #115a38;
+}
+
+main .side-title div {
+  margin: 10px 0px;
+}
+
+main .trend-section {
+  padding: 15px 0px;
+}
+
+main .trend-section .trend-title {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+main .trend-section #movies {
+  overflow-x: auto;
+}
+
+main .trend-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .trend-body .card {
+  margin: 5px 10px;
+  width: 11rem;
+}
+
+main .trend-body .card .card-body .movieRate svg {
+  margin-bottom: 4.5px;
+}
+
+main .trend-body .card .card-body .movieRate span {
+  font-size: 18px;
+  color: black;
+}
+
+main .trend-body .card .card-body .movieRate #star {
+  fill: #f5c518;
+}
+
+main .trend-body .card .card-body .movieTitle {
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+main .trend-body .card .card-body button {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .trend-body .card .card-body .trailer-btn {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .trend-body .card .card-body .trailer-btn #play {
+  fill: black;
+}
+
+main .trend-body .card .card-body .trailer-btn svg {
+  margin-top: 4px;
+}
+
+main .trend-body .card .card-body .trailer-btn:hover {
+  background-color: rgba(124, 120, 120, 0.158);
+}
+
+#side-title-div {
+  color: black !important;
+  font-size: 20px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width: 600px) {
+  .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .search input {
+    width: 100px;
+    height: 40px;
+  }
+  .second {
+    display: none;
+  }
+  .first {
+    display: block;
+  }
+  .sign-btn {
+    display: none !important;
+  }
+  .mainSearch {
+    height: 250px !important;
+  }
+  .content {
+    padding: 50px !important;
+  }
+  .content h1 {
+    font-size: 23px;
+  }
+  .content p {
+    font-size: 15px !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

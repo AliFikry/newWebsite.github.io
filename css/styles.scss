@@ -1,0 +1,205 @@
+*{
+    margin: 0;padding: 0;
+    
+}
+.navbar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .navbar-toggler{
+        border-radius: 180px;
+        background-color: #212529;
+    }
+    button:hover{
+        background-color: rgba(119, 119, 119, 0.24);
+    }
+    xl{
+        margin-top: 5px;
+    }
+}
+.first{
+    display: none;
+}
+.search{
+    display: flex;
+    input{
+        width: 200px;
+        height: 40px;
+    }
+    button{
+        background-color: #212529;
+    
+    }
+    .sign {
+        svg{
+            margin-top: 5px;
+            color: white;
+        }
+    }
+    .sign:hover{
+        background-color: rgba(119, 119, 119, 0.24);
+    }
+    .credentials{
+        display: flex;
+        button{
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #212529;
+        }
+        button:hover{
+            background-color: rgba(119, 119, 119, 0.24);
+        }
+        .searchbar{
+            margin-top: 5px;
+        }
+        .modal{
+            .modal-content{
+                input{
+                   padding: 10px;
+                   
+                }
+                input:focus,input:active{
+                    box-shadow:none !important;
+                    outline:none !important;
+                }
+            }
+        }
+    }
+}
+
+main{
+    .mainSearch{
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #20bf55;
+        background-image :linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+        height: 300px;
+
+        .content{
+            padding: 60px;
+            h1{
+                color: white;
+            }
+            p{
+                color: white;
+                font-size: 30px;
+                word-spacing: 2px;
+                letter-spacing: 1px;
+            }
+            input{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width: 100%;
+                
+            }
+            
+            .main-searchBar{
+                display: flex;
+                button{
+                    background-color: hsl(152, 69%, 31%);
+                }
+                button:hover{
+                    background-color: hsl(152, 69%, 21%);
+                }
+            }
+        }
+    }
+    .side-title{
+        div{
+            margin: 10px 0px ;
+        }
+    }
+    .trend-section{
+        padding: 15px 0px;
+        .trend-title{
+            font-size: 23px;
+            font-weight: 500;
+        }
+        #movies{
+            overflow-x: auto;
+        }
+    }
+    .trend-body{
+        display: flex;
+        .card{
+            margin: 5px 10px;
+            width: 11rem;
+            .card-body{
+                
+                .movieRate{
+                    svg{
+                        margin-bottom: 4.5px;
+                    }
+                    span{
+                        
+                        font-size: 18px;
+                        color: black;
+                    }
+
+                    #star{
+                        fill: #f5c518;
+                    }
+                }
+                .movieTitle{
+                    color: black;
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+                button{
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+                .trailer-btn{
+                    font-size: 18px;
+                    display: flex;
+                    #play{
+                        fill: black;
+                    }
+                    svg{
+                        margin-top: 4px;
+                        
+                    }
+                }
+                .trailer-btn:hover{
+                    background-color: rgba(124, 120, 120, 0.158);
+                }
+            }
+        }
+        
+    }
+}
+#side-title-div{
+    color: black !important;
+    font-size: 20px;
+   margin-top: 7px;
+   
+}
+@media only screen and (max-width: 600px) {
+    .search{
+        display: flex;
+        input{
+            width: 100px;
+            height: 40px;
+        }
+    }
+    .second{
+        display: none ;
+    }
+    .first{
+        display: block;
+    }
+    .sign-btn{
+      display: none !important;
+    }
+    .mainSearch{
+        height: 250px !important;
+    }
+    .content{
+        padding: 50px !important;
+
+        h1{
+            font-size: 23px;
+        }
+        p{
+            font-size: 15px !important;
+        }
+        
+    }
+}
