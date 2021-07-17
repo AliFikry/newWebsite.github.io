@@ -136,18 +136,63 @@ main .trend-section .trend-title {
   font-weight: 500;
 }
 
+main .trend-section #movies {
+  overflow-x: auto;
+}
+
 main .trend-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .trend-body .cards {
-  width: 18rem;
+main .trend-body .card {
+  margin: 5px 10px;
+  width: 11rem;
 }
 
-main .trend-body .cards img {
-  height: 250px;
+main .trend-body .card .card-body .movieRate svg {
+  margin-bottom: 4.5px;
+}
+
+main .trend-body .card .card-body .movieRate span {
+  font-size: 18px;
+  color: black;
+}
+
+main .trend-body .card .card-body .movieRate #star {
+  fill: #f5c518;
+}
+
+main .trend-body .card .card-body .movieTitle {
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+main .trend-body .card .card-body button {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .trend-body .card .card-body .trailer-btn {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .trend-body .card .card-body .trailer-btn #play {
+  fill: black;
+}
+
+main .trend-body .card .card-body .trailer-btn svg {
+  margin-top: 4px;
+}
+
+main .trend-body .card .card-body .trailer-btn:hover {
+  background-color: rgba(124, 120, 120, 0.158);
 }
 
 #side-title-div {
@@ -188,4 +233,4 @@ main .trend-body .cards img {
     font-size: 15px !important;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
