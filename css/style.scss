@@ -115,8 +115,50 @@ main{
     }
     .trend-body{
         display: flex;
-        .card{
-            margin: 5px 10px;
+        // .card{
+        //     margin: 5px 10px;
+        //     .card-body{
+                
+        //         .movieRate{
+        //             svg{
+        //                 margin-bottom: 4.5px;
+        //             }
+        //             span{
+                        
+        //                 font-size: 18px;
+        //                 color: black;
+        //             }
+
+        //             #star{
+        //                 fill: #f5c518;
+        //             }
+        //         }
+        //         .movieTitle{
+        //             color: black;
+        //             font-size: 21px;
+        //             font-weight: 300;
+        //         }
+        //         button{
+        //             margin-left: 50%;
+        //             transform: translateX(-50%);
+        //         }
+        //         .trailer-btn{
+        //             font-size: 18px;
+
+        //             span{
+        //                 padding: 0px 6px;
+        //             }
+        //         }
+        //         .trailer-btn:hover{
+        //             background-color: rgba(124, 120, 120, 0.158);
+        //         }
+        //     }
+        // }
+        .cards{
+            width: 18rem;
+            img{
+                height: 250px;
+            }
         }
     }
 }

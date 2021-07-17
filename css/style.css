@@ -142,8 +142,12 @@ main .trend-body {
   display: flex;
 }
 
-main .trend-body .card {
-  margin: 5px 10px;
+main .trend-body .cards {
+  width: 18rem;
+}
+
+main .trend-body .cards img {
+  height: 250px;
 }
 
 #side-title-div {
