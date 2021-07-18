@@ -49,3 +49,29 @@
     document.write(movieCard)
   }
 // console.log(movieTitle)
+
+
+
+
+
+
+
+
+
+var el=document.querySelectorAll(".trailer-btn")
+//  for (let i = 0; i < 19; i++) {
+//    console.log(el[i])
+   
+//  }
+//  console.dir(el[1])
+//  console .log(el)
+ console.log(el.values)
+//  for (let x = 0; x < el.length; x++) {
+//    el[x][x].addEventListener("click",fun())
+   
+//  }
+ function fun(e) {
+  //  alert("")
+ }
+  
+  // console.dir(document.querySelectorAll("#trailer-btn , button"))

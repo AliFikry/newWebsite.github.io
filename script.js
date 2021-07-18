@@ -2,6 +2,7 @@ const apiKey="api_key=6192e2e10b1eeb12b7be43e25f111522";
 const baseURL = "https://api.themoviedb.org/3";
 const imgURL = "https://image.tmdb.org/t/p/w500"
 const main = document.querySelector("#movies")
+const youtubeApi ="https://www.googleapis.com/youtube/v3/search?snippet&key=AIzaSyAmdHCy7hoDq65Z77CLzUjVurgCVkkOLEU&type=video&q="
 
 const trending = "/discover/movie?sort_by=popularity.desc&";
 // const trendingSection = 
@@ -14,18 +15,25 @@ function getMovies(url) {
   fetch(url)
   .then(res =>res.json())
   .then(data =>{
+   
     showMovies(data.results)
     console.log(data.results);
 
   })
+  
+  
 
 }
 
 
 
 function showMovies(data) {
+ 
+  
   main.innerHTML = "";
   data.forEach(movie => {
+    var num=0;
+    // num++
     const movieEl = document.createElement("div")
     movieEl.classList.add("movie");
     const {title,poster_path,vote_average} = movie;
@@ -34,9 +42,10 @@ function showMovies(data) {
       
       newTitle = title.slice(0,29)+"..."
     }
-    // console.log(title.length)
-    // console.log(title)
-
+    // console.log(data.length)
+   
+    // fetch(youtubeApi+title).then(res=>res.json()).then(datas =>
+    //   console.log(datas.items[0]))
     
     movieEl.innerHTML =`
     <a class="card border-0" style="width: 12rem; text-decoration: none;" href="##">
@@ -55,14 +64,15 @@ function showMovies(data) {
           ${newTitle}
         </span>
       </p>
-      <button class="btn trailer-btn">
+      <div class="btn trailer-btn"  onclick="trailer()">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play " viewBox="0 0 16 16">
           <path id="play" d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
         </svg>
         <span class="align-middle">Trailer</span>
-      </button>
+      </div>
     </div>
     </a> `;
+    
     main.appendChild(movieEl)
   });
 }
